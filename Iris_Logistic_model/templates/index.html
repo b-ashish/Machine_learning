@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+          background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20211116/pngtree-dark-blue-plain-background-for-design-template-image_916068.png');
+          background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;}
+        </style>
+    <head>
+        <title>
+            Iris Species Predictor
+        </title>
+    
+    </head>
+    <body>
+    <center>
+    {%if result == 'Iris-setosa'%}
+    <h1>Predicted species is Iris-setosa</h1>  
+    <img src='static\Irissetosa.jpg' width="550" height="450">
+    
+    {%elif result == 'Iris-versicolor'%}
+    <h1>Predicted species is Iris-versicolor</h1>  
+    <img src='static\iris-versicolor.jpg' width="550" height="450"> 
+
+    {%else%}
+    <h1>Predicted species is Iris-virginica</h1>
+    <img src='static\iris_virginica.jpg' width="550" height="450">
+    
+    {%endif%}
+
+        <br><br>
+    <b><a href='/'>GO BACK TO HOME</a></b>
+    </center>
+    </body>
+
+</html>

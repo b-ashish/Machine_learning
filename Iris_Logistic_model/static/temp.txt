@@ -1,0 +1,42 @@
+header {
+    background-color: #DFB887;
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+  }
+  /* header h1 {
+    margin: 0;
+    font-size: 1.7em;
+    color: rgb(134, 13, 13);
+    text-transform: uppercase;
+    float: left;
+  }
+  header h1:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  /*
+   * Centering the body content
+   */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .userinput {
+    padding: 10px 0 30px 0;
+    background-color: #2a2aa3;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+  div.index {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+   */
+
+       <!-- < -->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <body>
+        <h1>Iris Flower Species Predictor</h1>
+        <form class = "userinput" action="/" method="POST"> 
+            <label for ="Sepal_Length"> Sepal Length (cm) </label>
+            <br>
+            <input type="number"onchange="setTwoNumberDecimal"  id = "Sepal_Length" name = "Sepal_Length" min="4.0" max="7.9" step="0.001" value="4.0">
+            <br>
+            <label for ="Sepal_Width"> Speal Width (cm) </label>
+            <br>
+            <input type="number" onchange="setTwoNumberDecimal" id = "Sepal_Width" name = "Sepal_Width" min="2" max="4.4" step="0.001" value="2">
+            <br>
+            <label for ="Petal_Length"> Petal Width (cm) </label>
+            <br>
+            <input type="number" onchange="setTwoNumberDecimal" id = "Petal_Length" name = "Petal_Length" min="1" max="6.9" step="0.001" value="1">
+            <br>
+            <label for ="Petal_Length"> Petal Length (cm) </label>
+            <br>
+            <input type="number" onchange="setTwoNumberDecimal" id = "Petal_Width" name = "Petal_Width" min="0.1" max="2.5" step="0.001" value="0.1">
+            <br>
+
+            <input type ="submit" name="Predict">
+        </form>
+        <div class="alert" >
+            Species is {{result}}
+        </div>
+    </body>
+    </head>
+</html>

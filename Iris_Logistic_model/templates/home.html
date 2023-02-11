@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+          background-image: url('https://thumbs.dreamstime.com/b/yellow-textured-plain-background-wallpaper-design-use-text-image-yellow-textured-plain-background-wallpaper-137515345.jpg');
+          background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;}
+        </style>
+
+    <head>
+        <title>
+            Iris Species Predictor
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+    <center>
+    <body>
+  
+        <h1>Iris Flower Species Predictor</h1>
+        <div class="species">
+        <fieldset style="width:0px">
+            <legend>Input Data </legend>
+        
+        <form class = "userinput" action="{{url_for('input')}}"  method="post"> 
+            <p>
+            <label for ="sepalLengthCm"> Speal Length (cm) </label>
+            <input type="number" onchange="setTwoNumberDecimal"  id = "sepalLengthCm" name = "sepalLengthCm" step="0.001" >
+            </p>
+            <p>
+            <label for ="SepalWidthCm"> Speal Width (cm) </label>
+            <input type="number" onchange="setTwoNumberDecimal" id = "SepalWidthCm" name = "SepalWidthCm" step="0.001">
+            </p>
+            <p>
+            <label for ="PetalLengthCm"> Petal Width (cm) </label>
+            <input type="number" onchange="setTwoNumberDecimal" id = "PetalLengthCm" name = "PetalLengthCm" step="0.001" >
+            <br>
+            </p>
+
+            <p>
+            <label for ="PetalWidthCm"> Petal Length (cm) </label>
+            <input type="number" onchange="setTwoNumberDecimal" id = "PetalWidthCm" name = "PetalWidthCm" step="0.001" >
+            <br>
+            </p>
+
+
+            <input type ="submit"  name="Predict"     value = "Predict">
+            <input type="reset">
+        
+        </div>
+        </fieldset>
+            
+        </form>
+    
+    </div>
+    </body>
+</center>
+         
