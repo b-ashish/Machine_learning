@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>
+            Used Car Prediction
+        </title>
+    </head>
+    <style>
+        body { background-image: url(https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=http:%2F%2Fcdni.autocarindia.com%2FFeatures%2FCollage.jpg&h=578&w=872&c=0);
+                background-size: auto;
+                background-size: 100% ;
+            
+        }
+    </style>
+    <center>
+        <h1>Used Car Prediction</h1>
+        <h3>Enter your details here</h3>
+
+        <fieldset style="background-color: rgb(21, 171, 226);width:fit-content ;";>
+        <legend>Input Data</legend>
+    <body>
+        
+        <form class="userinput" method="POST", action="{{url_for('input')}}">
+            <p>
+            <label for = "year">year</label>
+            <input type ="number" id ="year"  name="year" min="1900" max="2020"/><br>
+            </p>
+            <label for = "seller_type">seller type </label>
+            <select id ="seller_type"  name="seller_type">
+            <option value="Individual">Individual</option>
+            <option value="Dealer">Dealer</option>
+            <option value="Trustmark Dealer">Trustmark Dealer</option>
+            </select>
+            <br>
+            <p>
+            <label for="km_driven"> km_driven </label>
+            <input type ="number" id ="km_driven"  name="km_driven"/><br>
+            </p>
+            <p>
+            <label for="fuel_type">fuel_type </label>
+            <select id ="fuel_type"  name="fuel_type">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Disel</option>
+            <option value="CNG">CNG</option>
+            <option value="LPG">LPG</option>
+            <option value="Electric">Electric</option>
+            </select>
+            </p>
+            <p>
+            <label for="transmission_type"> transmission_type </label>
+            <select id ="transmission_type"  name="transmission_type">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+            </select>
+            </p>
+            <p>
+            <label for="mileage"> mileage </label>
+            <input type ="number" id ="mileage" name="mileage" step="0.001"/><br>
+            </p>
+            <p>
+            <label for="engine"> engine(cc) </label>
+            <input type ="number" id ="engine" name="engine"/><br>
+            </p>
+            <p>
+            <label for="max_power"> max_power(bhp) </label>
+            <input type ="number" id ="max_power" name="max_power"/><br>
+            </p>
+            <p>
+            <label for="seats"> seats </label>
+            <select id ="seats" name="seats">
+            <option value="Seats2">2 Seater</option>
+            <option value="Seats4">4 Seater</option>
+            <option value="Seats5">5 Seater</option>
+            <option value="Seats6">6 Seater</option>
+            <option value="Seats7">7 Seater</option>
+            <option value="Seats8">8 Seater</option>
+            <option value="Seats9">9 Seater</option>
+            <option value="Seats10">10 Seater</option>
+            <option value="Seats14">14 Seater</option>
+            </select>
+            </p>
+            <br>
+            <input type="submit" name="Submit" />
+        </form>
+    </fieldset>
+
+        
+
+        
+        
+    </body>
+    </center>
+</html>
