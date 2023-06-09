@@ -1,4 +1,3 @@
-pip install flask
 from flask import Flask,render_template,jsonify,request
 import numpy as np
 from project_app.utils import Used_car_price_pred
