@@ -1,4 +1,4 @@
-# Machine Learning Project: Used Car Price Prediction
+# Machine Learning Project 3 : Used Car Price Prediction
 
 ## Overview
 
