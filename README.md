@@ -1,6 +1,5 @@
 # Machine_learning
-<html lang="en">
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     
     <head>
